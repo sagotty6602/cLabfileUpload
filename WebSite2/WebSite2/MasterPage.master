@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 250px;
+        }
+    </style>
+</head>
+<body style="height: 412px">
+    <form id="form1" runat="server">
+    <table class="auto-style1">
+        <tr>
+            <td colspan="2" style="background-color: #CC9900">Header</td>
+        </tr>
+        <tr>
+            <td class="auto-style2" style="background-color: #CCCC00">Menu</td>
+            <td>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p>
+                    </p>
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #CC9900">Flooter</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
